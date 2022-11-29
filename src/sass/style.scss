@@ -457,11 +457,6 @@ footer{
       padding: 20px 24px;
     }
   }
-  .feature{
-    .container{
-
-    }
-  }
   .asset{
     &-card{
       padding: 30px 20px 30px 20px;
@@ -486,21 +481,48 @@ footer{
 
 // Large devices (desktops, less than 1440px)         (1200px-1439px)
 @include media-breakpoint-down(xl){
-
+  .landing{
+    &-card{
+      max-width: 660px;
+      padding: 5px 10px 20px;
+    }
+    &-content{
+      padding-bottom: 0px;
+    }
+    &-disc{
+      margin-top: 0px;
+    }
+    .design-img>img{
+      height: 50px;
+    }
+  }
+  .bunchBox{
+    padding: 100px 20px;
+  }
 }
 
-// Medium devices (tablets, less than 1200px)
+// Medium devices (tablets, less than 1200px)         (768px -1199px)
 @include media-breakpoint-down(lg) {
 
+  .feature{
+    padding: 40px 0px;
+    .row{
+      display: block;
+      .col{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
 }
 
 
-// Small devices (landscape phones, less than 768px)
+// Small devices (landscape phones, less than 768px)  (576px - 767px)
 @include media-breakpoint-down(md) {
 
 }
 
-// X-Small devices (portrait phones, less than 576px)
+// X-Small devices (portrait phones, less than 576px) (375px - 575px)
 @include media-breakpoint-down(sm) {
 }
 
